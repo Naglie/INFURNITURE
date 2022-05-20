@@ -32,6 +32,15 @@ li {
 a {
     text-decoration: none; 
     color: black;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+a:hover:not(.logo-container a, .shopping-cart a, .button a) {
+    background-size: 100% 2px;
 }
 
 .shopping-cart {
