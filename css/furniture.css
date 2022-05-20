@@ -41,7 +41,7 @@ a {
     transition: background-size .3s;
 }
 
-a:hover:not(.img-container a, .logo-container a, .shopping-cart a) {
+a:hover:not(.img-container a, .logo-container a, .shopping-cart a, #inShoppingCart) {
     background-size: 100% 2px;
 }
 
@@ -169,4 +169,28 @@ h2 {
 
 .particular-object p b {
     font-size: 28px;
+}
+
+.shopping-cart-container {
+    width: 60%;
+    display: none;
+    margin: 25px auto;
+}
+
+#inShoppingCart {
+    width: 100%;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inter';
+    font-size: 22px;
+    border-radius: 50px;
+    background-color: rgb(255, 234, 214);
+    transition: ease all .3s;
+}
+
+#inShoppingCart:hover {
+    background-color: rgb(255, 204, 157);
+    box-shadow: 0 0 15px 1px rgb(153, 141, 108);
 }
