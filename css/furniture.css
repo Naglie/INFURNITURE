@@ -11,6 +11,8 @@ header {
     height: 136px;
     background-color: #EDDCC1;
     display: flex;
+    /* position: sticky;
+    top: 0px; */
 }
 
 ul {
@@ -116,9 +118,12 @@ a:hover:not(.img-container a, .logo-container a, .shopping-cart a) {
     background: #dbdbdb;
 }
 
-/* sofas */
-
 h2 {
+    width: 100%;
+    background-color: white;
+    position: sticky;
+    /* top: 136px; */
+    top: 0;
     font-family: 'Inter';
     font-style: italic;
     font-weight: 500;
@@ -127,7 +132,7 @@ h2 {
     letter-spacing: 0.055em;
 }
 
-.all-sofas {
+.all-objects {
     width: 97%;
     margin: 0 auto;
     display: flex;
@@ -135,7 +140,7 @@ h2 {
     flex-wrap: wrap;
 }
 
-.particular-sofa {
+.particular-object {
     width: 400px;
     margin-bottom: 71px;
     
@@ -143,16 +148,16 @@ h2 {
     transition: 0.3s;
 }
 
-.particular-sofa:hover {
+.particular-object:hover {
     box-shadow: 0 12px 20px 0 rgba(0,0,0,0.2);
   }
 
-.particular-sofa img {
+.particular-object img {
     width: 400px;
     height: 300px;
 }
 
-.particular-sofa p {
+.particular-object p {
     font-family: 'Inter';
     font-style: italic;
     font-size: 20px;
@@ -162,6 +167,6 @@ h2 {
     margin: 10px auto;
 }
 
-.particular-sofa p b {
+.particular-object p b {
     font-size: 28px;
 }
