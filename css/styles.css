@@ -51,7 +51,7 @@ a:hover:not(.logo-container a, .shopping-cart a, .button a) {
 main {
     width: 100%;
     height: 581px;
-    background-image: url(../Images/Other_images/modern_sofa-wallpaper-3840x2160\ 1.jpg);
+    background-image: url(../Images/Other_images/main_img.jpg);
 }
 
 h1 {
@@ -60,11 +60,6 @@ h1 {
     font-size: 72px;
     text-align: center;
     color: #FFFFFF;
-    text-shadow:
-   -1px -1px 0 black,  
-    1px -1px 0 black,
-    -1px 1px 0 black,
-    1px 1px 0 black;
     margin: 0;
 }
 
@@ -121,6 +116,8 @@ footer {
 .addvantage {
     display: flex;
     align-items: center;
+    background-color: #ebe8e8;
+    padding: 20px;
 }
 
 h3 {
