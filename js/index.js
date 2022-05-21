@@ -29,6 +29,6 @@ window.addEventListener('scroll', function () {
         message.style.top = "20px"
     }
     if (pixelCount > 480) {
-        message.style.top = "80px"
+        message.style.top = "80px";
     }
 })

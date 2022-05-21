@@ -123,6 +123,7 @@ h2 {
     width: 100%;
     background-color: white;
     position: sticky;
+    z-index: 100!important;
     /* top: 136px; */
     top: 0;
     font-family: 'Inter';
@@ -211,6 +212,7 @@ h2 {
     transform: translateY(-150%);
     opacity: 0;
     transition: ease all .3s;
+    z-index: 999999;
 }
 
 .alert.active {
