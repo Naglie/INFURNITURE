@@ -41,7 +41,7 @@ a {
     transition: background-size .3s;
 }
 
-a:hover:not(.img-container a, .logo-container a, .shopping-cart a, #inShoppingCart) {
+a:hover:not(.img-container a, .logo-container a, .shopping-cart a, .inShoppingCart) {
     background-size: 100% 2px;
 }
 
@@ -172,17 +172,18 @@ h2 {
 }
 
 .shopping-cart-container {
-    width: 60%;
     display: none;
-    margin: 25px auto;
+    transition: ease all .3s;
 }
 
-#inShoppingCart {
-    width: 100%;
+.inShoppingCart {
+    width: 60%;
     height: 45px;
+    margin: 20px auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    
     font-family: 'Inter';
     font-size: 22px;
     border-radius: 50px;
@@ -190,7 +191,11 @@ h2 {
     transition: ease all .3s;
 }
 
-#inShoppingCart:hover {
+.inShoppingCart:hover {
     background-color: rgb(255, 204, 157);
     box-shadow: 0 0 15px 1px rgb(153, 141, 108);
+}
+
+.active {
+    display: unset;
 }
