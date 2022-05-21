@@ -39,6 +39,7 @@ a {
     background-repeat: no-repeat;
     background-size: 0% 2px;
     transition: background-size .3s;
+    cursor: pointer;
 }
 
 a:hover:not(.img-container a, .logo-container a, .shopping-cart a, .inShoppingCart) {
@@ -196,6 +197,27 @@ h2 {
     box-shadow: 0 0 15px 1px rgb(153, 141, 108);
 }
 
-.active {
+.alert {
+    background-color: lightgreen;
+    height: 50px;
+    font-family: 'Inter';
+    font-size: 32px;
+    padding: 15px;
+    text-align: center;
+    position: fixed;
+    top: 15px;
+    left: 20px;
+    right: 20px;
+    transform: translateY(-150%);
+    opacity: 0;
+    transition: ease all .3s;
+}
+
+.alert.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.shopping-cart-container.active {
     display: unset;
 }
