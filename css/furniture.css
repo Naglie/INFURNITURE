@@ -80,6 +80,11 @@ a:hover:not(.img-container a, .logo-container a, .shopping-cart a, .inShoppingCa
     justify-content: center;
 }
 
+.img-container img {
+    transition: ease all 0.2s;
+    /* transition-timing-function: cubic-bezier(.97,.09,.53,.92); */
+}
+
 .type a {
     text-align: center;
     font-family: 'Inter';
@@ -111,6 +116,10 @@ a:hover:not(.img-container a, .logo-container a, .shopping-cart a, .inShoppingCa
     width: 200px;
     height: 153px;
     margin-top: 10px;
+}
+
+.img-container img:hover {
+    transform: scale(1.1);
 }
 
 .separating-bar {
@@ -146,6 +155,7 @@ h2 {
     width: 400px;
     height: 100%;
     opacity: 1;
+    overflow: hidden;
     margin-bottom: 50px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: ease all 0.3s;
@@ -158,6 +168,7 @@ h2 {
 .particular-object img {
     width: 400px;
     height: 300px;
+    transition: ease all 0.5s;
 }
 
 .particular-object p {
@@ -172,6 +183,10 @@ h2 {
 
 .particular-object p b {
     font-size: 28px;
+}
+
+.particular-object img:hover {
+    transform: scale(1.05);
 }
 
 .shopping-cart-container {
@@ -190,13 +205,15 @@ h2 {
     font-family: 'Inter';
     font-size: 22px;
     border-radius: 50px;
+    border: 1px solid rgb(211, 194, 161);
     background-color: rgb(255, 234, 214);
+    box-shadow: 0 0 10px 1px rgb(219, 206, 168);
     transition: ease all .3s;
 }
 
 .inShoppingCart:hover {
     background-color: rgb(255, 204, 157);
-    box-shadow: 0 0 15px 1px rgb(153, 141, 108);
+    box-shadow: 0 0 35px 1px rgb(153, 141, 108);
 }
 
 .alert {
@@ -204,6 +221,7 @@ h2 {
     height: 50px;
     font-family: 'Inter';
     font-size: 32px;
+    font-style: italic;
     padding: 15px;
     display: flex;
     align-items: center;
@@ -215,7 +233,8 @@ h2 {
     transform: translateY(-70%);
     opacity: 0;
     z-index: 999999;
-    transition: ease all .3s;
+    transition: ease all 0.5s;
+    transition-timing-function: cubic-bezier(.46,-0.71,.47,.79);
 }
 
 .particular-object.active {

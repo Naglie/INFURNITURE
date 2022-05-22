@@ -54,20 +54,37 @@ a:hover:not(.img-container a, .logo-container a, .shopping-cart a, .inShoppingCa
 /* main */
 
 main {
-    display: flex;
     justify-content: center;
     margin: 71px auto;
 }
 
+.wrapper {
+    width: 85%;
+    margin: 130px auto;
+    display: flex;
+}
+
 .img-container {
     display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 90px;
+}
+
+.img-container img {
+    width: 740px
+}
+
+.txt-container {
+    width: 100%;
     justify-content: center;
     align-items: center;
-    margin-right: 30px;
+    height: 520px; 
 }
 
 p {
-    width: 917px;
+    /* width: 917px; */
+    margin-top: 0;
     font-family: 'Inter';
-    font-size: 28px;
+    font-size: 25px;
 }

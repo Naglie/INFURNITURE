@@ -24,7 +24,7 @@ for(let i = 0; i < card.length; i++) {
     function addToCart() {
         const message = document.getElementById("message");
         message.classList.add("active");
-        setTimeout(() => message.classList.remove("active"), 2000);
+        setTimeout(() => message.classList.remove("active"), 3000);
     }
 }
 window.addEventListener('scroll', function () {
