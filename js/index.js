@@ -8,9 +8,13 @@ for(let i = 0; i < card.length; i++) {
     card[i].addEventListener('mousemove', showShoppingCart);
     card[i].addEventListener('mouseout', hideShoppingCart);
     function showShoppingCart() {
+        cartContainer[i].style.zIndex = "999999;"
+        card[i].classList.add("active");
         cartContainer[i].classList.add("active");
     }
     function hideShoppingCart() {
+        cartContainer[i].style.zIndex = "100;"
+        card[i].classList.remove("active");
         cartContainer[i].classList.remove("active");
     }
 }

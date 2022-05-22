@@ -53,10 +53,10 @@ a:hover:not(.img-container a, .logo-container a, .shopping-cart a, .inShoppingCa
 
 /* main */
 
-/* .wrapper {
+.wrapper {
     width: 90%;
     margin: 0 auto;
-} */
+}
 
 .menu {
     height: 333px;
@@ -144,10 +144,11 @@ h2 {
 
 .particular-object {
     width: 400px;
-    margin-bottom: 71px;
-    
+    height: 100%;
+    opacity: 1;
+    margin-bottom: 50px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
+    transition: ease all 0.3s;
 }
 
 .particular-object:hover {
@@ -174,8 +175,8 @@ h2 {
 }
 
 .shopping-cart-container {
-    display: none;
-    transition: ease all .3s;
+    height: 0;
+    opacity: 0;
 }
 
 .inShoppingCart {
@@ -204,22 +205,33 @@ h2 {
     font-family: 'Inter';
     font-size: 32px;
     padding: 15px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: fixed;
     top: 15px;
     left: 20px;
     right: 20px;
-    transform: translateY(-150%);
+    transform: translateY(-70%);
     opacity: 0;
-    transition: ease all .3s;
     z-index: 999999;
+    transition: ease all .3s;
+}
+
+.particular-object.active {
+    margin-bottom: 71px;
+    transition: ease all 0.1s;
 }
 
 .alert.active {
-    transform: translateY(0);
+    transform: translateY(0%);
     opacity: 1;
 }
 
 .shopping-cart-container.active {
     display: unset;
+    height: 100%;
+    opacity: 1;
+    transform: translateY(0);
+    transition: ease-in 0.1s;
 }
