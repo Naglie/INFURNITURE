@@ -141,6 +141,7 @@ h2 {
     font-size: 66px;
     text-align: center;
     letter-spacing: 0.055em;
+    transition: ease all 0.6s;
 }
 
 .all-objects {
@@ -169,6 +170,7 @@ h2 {
     width: 400px;
     height: 300px;
     transition: ease all 0.5s;
+    display: block;
 }
 
 .particular-object p {

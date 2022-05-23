@@ -27,12 +27,19 @@ for(let i = 0; i < card.length; i++) {
         setTimeout(() => message.classList.remove("active"), 3000);
     }
 }
+const furnitureType = document.getElementsByTagName('h2');
 window.addEventListener('scroll', function () {
     var pixelCount = window.pageYOffset;
-    if (pixelCount < 480) {
-        message.style.top = "20px"
+    if (pixelCount < 540) {
+        message.style.top = "20px";
+        for(let i = 0; i < card.length; i++) {
+            furnitureType[i].style.boxShadow = "0 0px 0px 0 rgba(0,0,0,0.2)";
+        }
     }
-    if (pixelCount > 480) {
+    if (pixelCount > 540) {
         message.style.top = "80px";
+        for(let i = 0; i < card.length; i++) {
+            furnitureType[i].style.boxShadow = "0 8px 8px 0 rgba(0,0,0,0.2)";
+        }
     }
 })
