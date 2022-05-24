@@ -83,8 +83,15 @@ h2 {
 }
 
 .secondary-container {
-    margin-top: 60px;
-    margin-left: 380px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.secondary-container h2 {
+    font-size: 96px;
+
 }
 
 .button {
@@ -134,7 +141,7 @@ h3 {
 }
 
 .second-img {
-    width: 105px;
+    width: 120px;
     height: 105px;
 }
 
