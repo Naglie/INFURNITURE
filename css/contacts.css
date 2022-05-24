@@ -3,6 +3,7 @@ html {
 }
 
 body {
+    font-family: 'Inter';
     margin: 0;
 }
 
@@ -11,8 +12,6 @@ header {
     height: 136px;
     background-color: #FDFCFA;
     display: flex;
-    /* position: sticky;
-    top: 0px; */
 }
 
 ul {
@@ -25,7 +24,6 @@ ul {
 li {
     width: 100%;
     justify-content: space-evenly;
-    font-family: 'Inter';
     font-size: 28px;
     list-style: none;
     text-align: center;
@@ -39,10 +37,9 @@ a {
     background-repeat: no-repeat;
     background-size: 0% 2px;
     transition: background-size .3s;
-    cursor: pointer;
 }
 
-a:hover:not(.img-container a, .logo-container a, .shopping-cart a, .inShoppingCart) {
+a:hover:not(.logo-container a, .shopping-cart a, .button a) {
     background-size: 100% 2px;
 }
 
@@ -52,39 +49,17 @@ a:hover:not(.img-container a, .logo-container a, .shopping-cart a, .inShoppingCa
 }
 
 /* main */
-
-main {
-    justify-content: center;
-    margin: 71px auto;
-}
-
 .wrapper {
-    width: 85%;
-    margin: 130px auto;
+    width: 75%;
+    margin: 0 auto;
     display: flex;
 }
-
-.img-container {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-right: 90px;
+iframe {
+    margin: 100px;
+    border-radius: 4%;
 }
-
-.img-container img {
-    width: 740px
-}
-
-.txt-container {
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    height: 520px; 
-}
-
-p {
-    /* width: 917px; */
-    margin-top: 0;
-    font-family: 'Inter';
-    font-size: 25px;
+.text {
+    font-size: 2em;
+    font-weight: bold;
+    margin: 100px;
 }
