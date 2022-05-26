@@ -50,16 +50,15 @@ a:hover:not(.logo-container a, .shopping-cart a, .button a) {
 
 /* main */
 .wrapper {
-    width: 75%;
-    margin: 0 auto;
+    width: 83%;
+    margin: 54px auto;
     display: flex;
 }
 iframe {
-    margin: 100px;
-    border-radius: 4%;
+    margin-right: 50px;
 }
 .text {
     font-size: 2em;
     font-weight: bold;
-    margin: 100px;
+    font-style: italic;
 }
