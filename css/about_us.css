@@ -51,17 +51,27 @@ a:hover:not(.img-container a, .logo-container a, .shopping-cart a, .inShoppingCa
     justify-content: flex-end;
 }
 
-/* main */
-
-main {
-    justify-content: center;
-    margin: 71px auto;
-}
+/* ABOUT OUR COMPANY */
 
 .wrapper {
     width: 85%;
-    margin: 130px auto;
-    display: flex;
+    margin: 0 auto;
+
+}
+
+h1 {
+    width: 100%;
+    justify-content: center;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    text-align: center;
+    letter-spacing: 0.08em;
+}
+
+.about_company{
+    display: flex;   
 }
 
 .img-container {
@@ -72,19 +82,101 @@ main {
 }
 
 .img-container img {
-    width: 740px
+    width: 740px;
 }
 
 .txt-container {
     width: 100%;
-    justify-content: center;
-    align-items: center;
     height: 520px; 
 }
 
 p {
     /* width: 917px; */
+    height: 20%;
     margin-top: 0;
     font-family: 'Inter';
     font-size: 25px;
+}
+
+/* PARTNERS */
+
+.partners {
+    display: flex;
+    justify-content:space-evenly;
+    align-items:center;
+    flex-wrap:wrap ;
+}
+
+.classen {
+    width: 415px;
+    height: 123px;
+}
+
+.abc {
+    width: 502px;
+    height: auto; 
+}
+
+.electrolux {
+    width: 379px;
+    height: 87px;
+}
+
+.hoff {
+    width: 207px;
+    height: 121px;
+}
+
+/* TEAM */
+
+.team {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+}
+
+.person_block {
+    width: 404px;
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+}
+
+.person_block img {
+    width: 325px;
+    height: 307px;
+    border-radius: 250px;
+}
+
+.person_block p {
+    width: 100%;
+    text-align: center;
+    line-height:50px;
+    font-weight: 400px;
+}
+
+.tsurka{
+    object-fit: cover;
+}
+
+@media (max-width: 1808px) and (min-width: 1px) {
+    .about_company {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .img-container {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .img-container img {
+        height: 100%;
+        width: 100%;
+    }
+
+    .txt-container {
+        height: auto;
+    }
 }
