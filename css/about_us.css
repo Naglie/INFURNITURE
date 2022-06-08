@@ -141,6 +141,7 @@ p {
     display: flex;
     justify-content:center;
     flex-wrap: wrap;
+    margin-bottom: 20px;
 }
 
 .person_block img {
@@ -160,6 +161,155 @@ p {
     object-fit: cover;
 }
 
+/* Footer */
+
+footer {
+    width: 100%;
+    height: 164px;
+    background-color: black;
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+}
+.soc-img {
+    width: 310px;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 24px;
+    margin-left: 24px;
+}
+.soc-img img { 
+    width: 50px;
+    height: 50px;
+    margin-right: 33px;
+}
+.footer-info {
+    width: 800px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer-header {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0;
+}
+.part {
+    width: 238px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.part ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+}
+.part ul li {
+    width: 100%;
+    font-size: 14px;
+    text-align: left;
+    line-height: 19px;
+}
+.sales {
+    margin-left: 0;
+}
+.sales .footer-header {
+    margin-top: 30px;
+}
+.sales ul {
+    margin-bottom: 30px;
+}
+.offer {
+    margin-left: 60px
+}
+.offers .footer-header {
+    margin-top: 30px;
+}
+.offers ul {
+    margin-bottom: 40px;
+}
+.advantages {
+    margin-left: -60px;
+}
+.advantages .footer-header {
+    width: 100%;
+    white-space: nowrap;
+    margin-top: 30px;
+}
+.advantages ul {
+    margin-bottom: 40px;
+}
+.form {
+    width: 250px;
+    margin-left: -30px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.sub-heading {
+    width: 100%;
+}
+.sub-heading p {
+    white-space: nowrap;
+    margin: 0;
+    margin-bottom: -15px;
+}
+input {
+    width: 100%;
+    height: 25px;
+    border: 1px solid #8a8a8a;
+}
+input::placeholder {
+    color: lightgray;
+}
+.button {
+    width: 160px;
+    height: 33px;
+    margin: 0;
+    margin-top: -25px;
+    background: #FFFFFF;
+    border-radius: 3px;
+    justify-content: center;
+    align-items: center;
+}
+.button a {
+    width: 100%;
+    height: 100%;
+    letter-spacing: 0;
+    text-align: center;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 23px;
+    transition: ease all .3s;
+    color: #000000;
+}
+.button a:hover {
+    color: white;
+    background-color: black;
+}
+.contacts {
+    height: 90px;
+    margin-left: 70px;
+    margin-top: 50px;
+}
+.contacts p {
+    width: 100%;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: left;
+    margin: 0;
+    color: #FFFFFF;
+}
+
+
+
 @media (max-width: 1808px) and (min-width: 1px) {
     .about_company {
         flex-direction: column;
@@ -171,6 +321,7 @@ p {
         justify-content: center;
         align-items: center;
     }
+
     .img-container img {
         height: 100%;
         width: 100%;
@@ -179,4 +330,86 @@ p {
     .txt-container {
         height: auto;
     }
+
+    .person_block img {
+        height: 50%;
+        width: 60%;
+    }
+
+
+    .advantages{
+        display: none;
+    }
+    
+    .contacts {
+        display: none;
+    }
+
+    .form {
+        justify-content: flex-end;
+    }
+
+    .sales {
+        width: 170px;
+    }
+
+    .offers {
+        width: 170px;
+    }
+
+    .sub-heading {
+        width: 600px;
+
+    }
+
+    .sub-heading p {
+        font-size: 20px;
+    }
+
+    .soc-img {
+        height: 80px;
+        width: 120px;
+    }
+}
+
+@media(max-width: 400px){
+    
+    h1 {
+        font-size: 55px;
+    }
+
+    .soc-img {
+        width: 50%;
+        height: 40%;
+    }
+
+    .soc-img img {   
+        height: 40px; 
+    }
+
+    .footer-info {
+        height: 85%;
+    }
+
+    .classen {
+        width: 350px;
+        height: 123px;
+    }
+    
+    .abc {
+        width: 450px;
+        height: auto; 
+    }
+    
+    .electrolux {
+        width: 379px;
+        height: 87px;
+        margin-bottom: 30px;
+    }
+    
+    .hoff {
+        width: 207px;
+        height: 121px;
+    }
+
 }
