@@ -27,7 +27,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
 
-
     <title>INFURNITURE</title>
 </head>
 
@@ -36,16 +35,30 @@
         <div class="logo-container">
             <a href="../index.html"><img src="../Images/Other_images/logo.png" alt="logo"></a>
         </div>
-        <ul>
+        <!-- <ul>
             <li><a href="">Мебель</a></li>
             <li><a href="">Услуги</a></li>
             <li><a href="">Предложения</a></li>
             <li><a href="about_us.html">О нас</a></li>
             <li><a href="contacts.html">Контакты</a></li>
-        </ul>
-        <div class="shopping-cart">
-            <a ><img src="../Images/Other_images/shopping-cart.png" alt="shopping cart"></a>
+        </ul> -->
+        <div class="burger-container" id="burgerContainer">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
         </div>
+        <div class="topnav" id="topnav">
+            <div class="myLinks">
+                <a href="">Мебель</a>
+                <a href="">Услуги</a>
+                <a href="">Предложения</a>
+                <a href="about_us.html">О нас</a>
+                <a href="contacts.html">Контакты</a>
+            </div>
+        </div>
+        <!-- <div class="shopping-cart">
+            <a ><img src="../Images/Other_images/shopping-cart.png" alt="shopping cart"></a>
+        </div> -->
         <div id="message" class="alert">Товар добавлен</div>
     </header>
 
@@ -87,7 +100,7 @@
 
             <h2 id="sofas">Диваны</h2>
             <div class="all-objects">
-                <div class="objects-row">
+                <div class="objects-column">
                     <div class="particular-object">
                         <div class="discount-circle">
                             <p>15%</p>
@@ -102,6 +115,8 @@
                             <a class="inShoppingCart" >В корзину</a>
                         </div>
                     </div>
+                </div>
+                <div class="objects-column">
                     <div class="particular-object">
                         <div class="discount-circle">
                             <p>25%</p>
@@ -116,6 +131,8 @@
                             <a class="inShoppingCart" >В корзину</a>
                         </div>
                     </div>
+                </div>
+                <div class="objects-column">
                     <div class="particular-object">
                         <div class="discount-circle">
                             <p>5%</p>
@@ -131,7 +148,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="objects-row">
+                <div class="objects-column">
                     <div class="particular-object">
                         <div class="discount-circle">
                             <p>40%</p>
@@ -146,6 +163,8 @@
                             <a class="inShoppingCart" >В корзину</a>
                         </div>
                     </div>
+                </div>
+                <div class="objects-column">
                     <div class="particular-object">
                         <div class="discount-circle">
                             <p>30%</p>
@@ -160,6 +179,8 @@
                             <a class="inShoppingCart" >В корзину</a>
                         </div>
                     </div>
+                </div>
+                <div class="objects-column">
                     <div class="particular-object">
                         <div class="discount-circle">
                             <p>10%</p>
@@ -181,7 +202,7 @@
 
             <h2 id="beds">Кровати</h2>
             <div class="all-objects">
-                <div class="objects-row">
+                <div class="objects-column">
                     <div class="particular-object">
                         <div class="test">
                             <img src="../Images/Beds/Barcelona.jpg">
@@ -192,6 +213,8 @@
                             <a class="inShoppingCart" >В корзину</a>
                         </div>
                     </div>
+                </div>
+                <div class="objects-column">
                     <div class="particular-object">
                         <img src="../Images/Beds/Carrara.jpg">
                         <p>Двуспальная кровать Carrara</p>
@@ -200,6 +223,8 @@
                             <a class="inShoppingCart" >В корзину</a>
                         </div>
                     </div>
+                </div>
+                <div class="objects-column">
                     <div class="particular-object">
                         <img src="../Images/Beds/richmond.jpg">
                         <p>Двуспальная кровать Richmond</p>
@@ -209,7 +234,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="objects-row">
+                <div class="objects-column">
                     <div class="particular-object">
                         <img src="../Images/Beds/Scandinavia.jpg">
                         <p>Двуспальная кровать Scand</p>
@@ -218,6 +243,8 @@
                             <a class="inShoppingCart" >В корзину</a>
                         </div>
                     </div>
+                </div>
+                <div class="objects-column">
                     <div class="particular-object">
                         <img src="../Images/Beds/Sky.jpg">
                         <p>Двуспальная кровать Sky</p>
@@ -226,6 +253,8 @@
                             <a class="inShoppingCart" >В корзину</a>
                         </div>
                     </div>
+                </div>
+                <div class="objects-column">
                     <div class="particular-object">
                         <img src="../Images/Beds/Skyfall.jpg">
                         <p>Двуспальная кровать Skyfall</p>
@@ -241,7 +270,7 @@
 
             <h2 id="closets">Шкафы</h2>
             <div class="all-objects">
-                <div class="objects-row">
+                <div class="objects-column">
                     <div class="particular-object">
                         <img src="../Images/Closets/Briddge.jpg">
                         <p>Шкаф-купе Briddge</p>
@@ -250,6 +279,8 @@
                             <a class="inShoppingCart" >В корзину</a>
                         </div>
                     </div>
+                </div>
+                <div class="objects-column">
                     <div class="particular-object">
                         <img src="../Images/Closets/Domeno.jpg">
                         <p>Шкаф-купе Domeno</p>
@@ -258,6 +289,8 @@
                             <a class="inShoppingCart" >В корзину</a>
                         </div>
                     </div>
+                </div>
+                <div class="objects-column">
                     <div class="particular-object">
                         <img src="../Images/Closets/Eroma.jpg">
                         <p>Шкаф-купе Eroma</p>
@@ -267,7 +300,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="objects-row">
+                <div class="objects-column">
                     <div class="particular-object">
                         <img src="../Images/Closets/Monjane.jpg">
                         <p>Шкаф-купе Monjane</p>
@@ -276,6 +309,8 @@
                             <a class="inShoppingCart" >В корзину</a>
                         </div>
                     </div>
+                </div>
+                <div class="objects-column">
                     <div class="particular-object">
                         <img src="../Images/Closets/Regalia.jpg">
                         <p>Шкаф-купе Regalia</p>
@@ -284,6 +319,8 @@
                             <a class="inShoppingCart" >В корзину</a>
                         </div>
                     </div>
+                </div>
+                <div class="objects-column">
                     <div class="particular-object">
                         <img src="../Images/Closets/Shrena.jpg">
                         <p>Шкаф-купе Shrena</p>
@@ -299,7 +336,7 @@
 
             <h2 id="tables">Столы</h2>
             <div class="all-objects">
-                <div class="objects-row">
+                <div class="objects-column">
                     <div class="particular-object">
                         <img src="../Images/Tables/Bento.jpg">
                         <p>Офисный стол Bento</p>
@@ -308,6 +345,8 @@
                             <a class="inShoppingCart" >В корзину</a>
                         </div>
                     </div>
+                </div>
+                <div class="objects-column">
                     <div class="particular-object">
                         <img src="../Images/Tables/Calacata.jpg">
                         <p>Стеклянный столик Calacata</p>
@@ -316,6 +355,8 @@
                             <a class="inShoppingCart" >В корзину</a>
                         </div>
                     </div>
+                </div>
+                <div class="objects-column">
                     <div class="particular-object">
                         <img src="../Images/Tables/Calame.jpg">
                         <p>Обеденный стол Calame</p>
@@ -325,7 +366,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="objects-row">
+                <div class="objects-column">
                     <div class="particular-object">
                         <img src="../Images/Tables/Clark.jpg">
                         <p>Обеденный стол Clark</p>
@@ -334,6 +375,8 @@
                             <a class="inShoppingCart" >В корзину</a>
                         </div>
                     </div>
+                </div>
+                <div class="objects-column">
                     <div class="particular-object">
                         <img src="../Images/Tables/Daulata.jpg">
                         <p>Стеклянный столик Daulata</p>
@@ -342,6 +385,8 @@
                             <a class="inShoppingCart" >В корзину</a>
                         </div>
                     </div>
+                </div>
+                <div class="objects-column">
                     <div class="particular-object">
                         <img src="../Images/Tables/EPalazzo.jpg">
                         <p>Журнальный столик EPalazzo</p>
@@ -399,6 +444,7 @@
             <p>тел. +372 5896 2473</p>
         </div>
     </footer>
+    
     <script src="../js/index.js"></script>
 </body>
     

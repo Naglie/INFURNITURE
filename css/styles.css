@@ -184,7 +184,7 @@ h3 {
     flex: 0 0 100%;
     max-width: 100%;
 }
-  
+
   /* кнопки Prev и Next */
 .itcss__control {
     z-index: 10;
@@ -339,12 +339,15 @@ h3 {
     box-shadow: 0 8px 15px rgba(250, 135, 202, 0.1);
 }
 #btn1:hover, #btn2:hover, #btn3:hover, #btn4:hover {
-    transform: translateY(-3px);
+    transform: translateY(-3px) scale(1.02);
 }
 #btn1, #btn2, #btn3, #btn4 {
     border-radius: 25px;
     transition: .3s;
 }
+
+
+/* FOOTER */
 
 
 footer {
@@ -367,6 +370,10 @@ footer {
     width: 50px;
     height: 50px;
     margin-right: 33px;
+    transition: all .2s;
+}
+.soc-img img:hover { 
+    transform: scale(1.05);
 }
 .footer-info {
     width: 800px;
@@ -487,7 +494,6 @@ input::placeholder {
     margin-top: 50px;
 
 }
-
 .contacts p {
     width: 100%;
     font-family: 'Open Sans';
@@ -497,4 +503,12 @@ input::placeholder {
     text-align: left;
     margin: 0;
     color: #FFFFFF;
+}
+
+
+/* MEDIAA */
+
+
+@media (min-width: 768px) {
+    
 }

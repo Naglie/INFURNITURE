@@ -2,6 +2,29 @@ var debug = true;
 function isDebug(message) {
     if(debug) console.log(message);
 }
+const burger = document.getElementById('burgerContainer');
+const burgerNav = document.getElementById('topnav');
+burger.addEventListener('click', (e) => {
+    e.preventDefault();
+    burger.classList.toggle('change');
+    burgerNav.classList.toggle('hide');
+    if(!burgerNav.classList.contains('hide')) {
+        
+    }
+});
+
+window.addEventListener('resize', (e) => {
+    var widthPixel = window.innerWidth;
+    if(widthPixel < 1250) {
+        console.log('good');
+        document.getElementById('burgerContainer').classList.add('activate');
+    }
+    if(widthPixel > 1250) {
+        console.log('bad');
+        document.getElementById('burgerContainer').classList.remove('activate');
+    }
+});
+
 const card = document.getElementsByClassName("particular-object");
 const cartContainer = document.getElementsByClassName("shopping-cart-container");
 for(let i = 0; i < card.length; i++) {
@@ -18,6 +41,8 @@ for(let i = 0; i < card.length; i++) {
         cartContainer[i].classList.remove("active");
     };
 }
+
+
 const btnToCart = document.getElementsByClassName("inShoppingCart");
 for(let i = 0; i < card.length; i++) {
     btnToCart[i].addEventListener('click', addToCart);
@@ -27,6 +52,8 @@ for(let i = 0; i < card.length; i++) {
         setTimeout(() => message.classList.remove("active"), 3000);
     }
 }
+
+
 const furnitureType = document.getElementsByTagName('h2');
 window.addEventListener('scroll', function () {
     var pixelCount = window.pageYOffset;
