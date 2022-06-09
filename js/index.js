@@ -8,7 +8,7 @@ for(let i = 0; i < card.length; i++) {
     card[i].addEventListener('mousemove', showShoppingCart);
     card[i].addEventListener('mouseout', hideShoppingCart);
     function showShoppingCart() {
-        cartContainer[i].style.zIndex = "999999;"
+        cartContainer[i].style.zIndex = "99999;"
         card[i].classList.add("active");
         cartContainer[i].classList.add("active");
     };

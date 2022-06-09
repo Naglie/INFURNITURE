@@ -175,31 +175,20 @@ h2 {
     transition: ease all 0.3s;
 }
 
-.circle {
+.discount-circle {
     width: 72px;
     height: 72px;
     border-radius: 50%;
     background: #E63333;
     position: absolute;
+    margin: -35px 360px;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 99;
 }
 
-.discount-circle1 {
-    width: 72px;
-    height: 72px;
-    border-radius: 50%;
-    background: #E63333;
-    position: absolute;
-    left: 600px;
-    top: 770px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.discount-circle1 p {
+.discount-circle p {
     font-style: bold;
     color: white;
     font-family: 'Roboto';
