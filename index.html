@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/x-icon" href="Images/Other_images/favicon.ico" />
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/header.css">
 
     <!-- Inter font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,17 +27,31 @@
 </head>
 
 <body>
-    <header id="main">
+    <header>
         <div class="logo-container">
-            <a href="#main"><img src="Images/Other_images/logo.png" alt="logo"></a>
+            <a href="../index.html"><img src="../Images/Other_images/logo.png" alt="logo"></a>
         </div>
         <ul>
             <li><a href="Other_pages/furniture.html">Мебель</a></li>
-            <li><a href="">Услуги</a></li>
+            <li><a href="Other_pages/offers.html">Услуги</a></li>
             <li><a href="">Предложения</a></li>
             <li><a href="Other_pages/about_us.html">О нас</a></li>
             <li><a href="Other_pages/contacts.html">Контакты</a></li>
         </ul>
+        <div class="burger-container activate" id="burgerContainer">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+        <div class="topnav" id="topnav">
+            <div id="myLinks" class="myLinks">
+                <a href="Other_pages/furniture.html">Мебель</a>
+                <a href="Other_pages/offers.html">Услуги</a>
+                <a href="">Предложения</a>
+                <a href="Other_pages/about_us.html">О нас</a>
+                <a href="Other_pages/contacts.html">Контакты</a>
+            </div>
+        </div>
     </header>
 
     <main>
@@ -132,6 +147,7 @@
             <p>тел. +372 5896 2473</p>
         </div>
     </footer>
+    <script src="js/header.js"></script>
     <script src="js/slider.js"></script>
 </body>
 
