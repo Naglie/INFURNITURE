@@ -105,7 +105,7 @@ for(let i = 0; i < card.length; i++) {
 const partObject = document.getElementsByClassName('particular-object');
 for (let i = 0; i < card.length; i++) {
     card[i].addEventListener('click', (e) => {
-        // const comboBox = document.getElementById('comboBox-container').style.display = 'unset';
+        const comboBox = document.getElementById('comboBox-container').style.display = 'unset';
         let productChildren = partObject[i].children;
         if(partObject[i].childElementCount === 5) {
             var productImg = productChildren[1].getAttribute('src');
@@ -113,14 +113,13 @@ for (let i = 0; i < card.length; i++) {
             var productNewPrice = productChildren[3].children[0].textContent;
             var productOldPrice = productChildren[3].children[1].textContent;
         }
-        if(partObject[i].childElementCount === 4) {
+        else if(partObject[i].childElementCount === 4) {
             var productImg = productChildren[0].getAttribute('src');
             var productName = productChildren[1].textContent;
-            var productNewPrice = productChildren[2].children[0].textContent;
-            var productOldPrice = productChildren[2].children[1].textContent;
+            var productNewPrice = productChildren[2].textContent;
         }
-        // console.log(productImg, productName, productNewPrice, productOldPrice)
         comboBoxModule.createComboBox(productImg, productName, productNewPrice, productOldPrice);
+        console.log(productImg, productName, productNewPrice, productOldPrice)
     })
 }
 
