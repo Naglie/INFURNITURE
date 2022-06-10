@@ -1,0 +1,95 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    height: 136px;
+    background-color: #FDFCF0;
+    display: flex;
+    /* position: sticky;
+    top: 0px; */
+}
+
+ul {
+    width: 100%;
+    display: flex;
+    margin: 51px auto;
+    padding: 0;
+}
+
+li {
+    width: 100%;
+    justify-content: space-evenly;
+    font-family: 'Inter';
+    font-size: 28px;
+    list-style: none;
+    text-align: center;
+}
+h2{
+    position: sticky;
+    width: 394px;
+    height: 77px;
+    left: 780px;
+    top: 0px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 66px;
+    line-height: 77px;
+    text-align: center;
+
+    color: #000000;
+}
+.all-objects {
+    display: flex;
+    flex-wrap: wrap;
+}
+.particular-object {
+    width: 400px;
+    /* height: 100%; */
+    opacity: 1;
+    overflow: hidden;
+    margin-bottom: 50px;
+    transition: ease all 0.3s;
+}
+
+.objects-row {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.particular-object img {
+    position: absolute;
+    width: 470px;
+    height: 280px;
+    transition: ease all 0.5s;
+}
+
+.particular-object p {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-size: 24px;
+    text-align: center;
+    margin: 0;
+    margin: 10px auto;
+}
+
+.particular-object p b {
+    font-size: 32px;
+}
+
+.particular-object:hover > img {
+    transform: scale(1.05);
+}
+
+.shopping-cart-container {
+    height: 0;
+    opacity: 0;
+}
