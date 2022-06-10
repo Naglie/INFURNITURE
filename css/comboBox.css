@@ -1,0 +1,123 @@
+.comboBox-container {
+    width: calc((1920px / 100) * 55);
+    height: 800px;
+    position: fixed;
+    left: calc(45% / 2);
+    right: calc(45% / 2);
+    bottom: 60px;
+    z-index: 10000;
+    border: 2px solid gray;
+    background-color: lightgray;
+}
+#comboBox {
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+.box-img_info-container {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-img-container {
+    width: 500px;
+    height: 400px;
+}
+.box-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.box-info-container {
+    width: 50%;
+    height: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#product-name {
+    width: 100%;
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 48px;
+    text-align: center;
+    letter-spacing: 0.135em;
+    margin: 0;
+}
+.product-prices {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.product-prices p {
+    margin: 0;
+}
+#product-new-price {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    letter-spacing: 0.135em;
+    color: #E63333;
+    padding-right: 15px;
+}
+#product-old-price {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    text-align: center;
+    letter-spacing: 0.135em;
+    text-decoration-line: line-through;
+}
+.box-button {
+    width: 305px;
+    height: 70px;
+    background: rgba(255, 199, 0, 0.33);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box-button a {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    letter-spacing: 0.1em;
+}
+#box-characteristics-name {
+    width: 100%;
+    margin-top: 60px;
+    font-family: 'Roboto';
+    font-style: normal;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 32px;
+    text-align: left;
+    letter-spacing: 0.135em;
+}
+.box-characteristics-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.box-characteristics1, .box-characteristics2 {
+    width: 100%;
+    height: 180px;
+}
+.box-characteristics1 p, .box-characteristics2 p {
+    margin: 10px 0;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 26px;
+    text-align: left;
+}
