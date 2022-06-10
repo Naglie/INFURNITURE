@@ -1,7 +1,4 @@
-var debug = true;
-function isDebug(message) {
-    if(debug) console.log(message);
-}
+import {comboBoxModule} from './ComboBoxModule.js';
 
 // BURGER MENU
 const burger = document.getElementById('burgerContainer');
@@ -86,7 +83,7 @@ window.addEventListener('resize', (e) => {
     }
 });
 
-// FURNITURE HOVER
+// FURNITURE HOVER AND CLICK FOR INFO
 const card = document.getElementsByClassName("particular-object");
 const cartContainer = document.getElementsByClassName("shopping-cart-container");
 for(let i = 0; i < card.length; i++) {
@@ -102,6 +99,29 @@ for(let i = 0; i < card.length; i++) {
         card[i].classList.remove("active");
         cartContainer[i].classList.remove("active");
     };
+}
+
+// COMBOBOX
+const partObject = document.getElementsByClassName('particular-object');
+for (let i = 0; i < card.length; i++) {
+    card[i].addEventListener('click', (e) => {
+        // const comboBox = document.getElementById('comboBox-container').style.display = 'unset';
+        let productChildren = partObject[i].children;
+        if(partObject[i].childElementCount === 5) {
+            var productImg = productChildren[1].getAttribute('src');
+            var productName = productChildren[2].textContent;
+            var productNewPrice = productChildren[3].children[0].textContent;
+            var productOldPrice = productChildren[3].children[1].textContent;
+        }
+        if(partObject[i].childElementCount === 4) {
+            var productImg = productChildren[0].getAttribute('src');
+            var productName = productChildren[1].textContent;
+            var productNewPrice = productChildren[2].children[0].textContent;
+            var productOldPrice = productChildren[2].children[1].textContent;
+        }
+        // console.log(productImg, productName, productNewPrice, productOldPrice)
+        comboBoxModule.createComboBox(productImg, productName, productNewPrice, productOldPrice);
+    })
 }
 
 // SHOPPING CART ALERT
