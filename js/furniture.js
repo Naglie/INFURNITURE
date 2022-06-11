@@ -36,18 +36,18 @@ window.addEventListener('resize', (e) => {
         let uls = header.getElementsByTagName('ul');
         let shpCart = header.getElementsByClassName('shopping-cart');
         for (let i = 0; i < uls.length; i++) {
-            uls[i].style.transform = 'translateX(-70%)';
+            uls[i].style.transform = 'translateY(-300px)';
             uls[i].style.opacity = '0';
             setTimeout(() => {
                 uls[i].style.display = 'none';
-            }, 400);
+            }, 600);
         }
         for (let i = 0; i < shpCart.length; i++) {
             shpCart[i].style.opacity = '0';
-            shpCart[i].style.transform = 'translateX(-70%)';
+            shpCart[i].style.transform = 'translateY(-300px)';
             setTimeout(() => {
                 shpCart[i].style.display = 'none';
-            }, 400);
+            }, 600);
         }
         burgerNav.style.opacity = '0';
         burgerNav.style.transform = 'translateY(-70%)';
@@ -119,7 +119,10 @@ for (let i = 0; i < card.length; i++) {
             var productNewPrice = productChildren[2].textContent;
         }
         comboBoxModule.createComboBox(productImg, productName, productNewPrice, productOldPrice);
-        console.log(productImg, productName, productNewPrice, productOldPrice)
+        document.getElementById('dark-screen').style.display = 'unset';
+        document.getElementById('dark-screen').style.opacity = '1';
+        document.getElementById('message').style.display = 'none';
+        // console.log(productImg, productName, productNewPrice, productOldPrice)
     })
 }
 

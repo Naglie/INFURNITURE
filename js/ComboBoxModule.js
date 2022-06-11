@@ -38,6 +38,11 @@ class ComboBoxModule {
         document.getElementById('box-exit').addEventListener('click', (e) => {
             comboBox.innerHTML = '';
             comboBox.style.display = 'none';
+            document.getElementById('dark-screen').style.opacity = '0';
+            setTimeout(() => {
+                document.getElementById('dark-screen').style.display = 'none';
+                document.getElementById('message').style.display = 'unset';
+            }, 200);
         });
         
         if(productOldPrice !== undefined) {

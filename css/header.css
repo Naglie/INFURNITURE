@@ -20,7 +20,7 @@ ul {
     display: flex;
     margin: 51px auto;
     padding: 0;
-    transition: all .3s;
+    transition: all .2s;
 }
 
 li {
@@ -43,13 +43,14 @@ a {
     cursor: pointer;
 }
 
-a:hover:not(.img-container a, .logo-container a, .shopping-cart a, .inShoppingCart, .button a, .myLinks a) {
+header ul li a:hover {
     background-size: 100% 2px;
 }
 
 .shopping-cart {
     display: flex;
     justify-content: flex-end;
+    transition: all .2s;
 }
 
 @media (max-width: 1250px) {
@@ -86,6 +87,7 @@ a:hover:not(.img-container a, .logo-container a, .shopping-cart a, .inShoppingCa
     .topnav {
         width: 100%;
         height: auto;
+        overflow: hidden;
         position: absolute;
         top: 116px;
         left: 0;

@@ -22,7 +22,7 @@ burger.addEventListener('click', (e) => {
         }, 400);
     }
 });
-// HEADER TYPE (resize page)
+// HEADER TYPE (resize page, BUT better to use load)
 window.addEventListener('resize', (e) => {
     var widthPixel = window.innerWidth;
     // SHOW MOBILE HEADER
@@ -32,7 +32,7 @@ window.addEventListener('resize', (e) => {
         let uls = header.getElementsByTagName('ul');
         let shpCart = header.getElementsByClassName('shopping-cart');
         for (let i = 0; i < uls.length; i++) {
-            uls[i].style.transform = 'translateX(-70%)';
+            uls[i].style.transform = 'translateY(-300px)';
             uls[i].style.opacity = '0';
             setTimeout(() => {
                 uls[i].style.display = 'none';
@@ -40,7 +40,7 @@ window.addEventListener('resize', (e) => {
         }
         for (let i = 0; i < shpCart.length; i++) {
             shpCart[i].style.opacity = '0';
-            shpCart[i].style.transform = 'translateX(-70%)';
+            shpCart[i].style.transform = 'translateY(-300px)';
             setTimeout(() => {
                 shpCart[i].style.display = 'none';
             }, 400);
