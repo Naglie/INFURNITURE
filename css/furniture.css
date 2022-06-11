@@ -45,7 +45,7 @@ a {
     cursor: pointer;
 }
 
-a:hover:not(.img-container a, .logo-container a, .shopping-cart a, .inShoppingCart, .button a, .myLinks a, #shpCartBtn) {
+a:hover:not(.img-container a, .logo-container a, .shopping-cart a, .inShoppingCart, .button a, .myLinks a, #shpCartBtn a) {
     background-size: 100% 2px;
 }
 

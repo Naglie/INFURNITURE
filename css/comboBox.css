@@ -34,7 +34,7 @@
     height: 30px;
     transition: all .2s;
 }
-.box-exit-btn img:hover {
+.box-exit-btn:hover > img {
     transform: scale(1.1)
 }
 .box-img_info-container {
@@ -101,11 +101,17 @@
 .box-button {
     width: 305px;
     height: 70px;
-    background: rgba(255, 199, 0, 0.33);
+    background-color: rgba(255, 199, 0, 0.33);
     border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all .3s;
+    cursor: pointer;
+}
+.box-button:hover {
+    transform: scale(1.01);
+    background-color: rgba(255, 200, 0, 0.603);
 }
 .box-button a {
     font-family: 'Roboto';

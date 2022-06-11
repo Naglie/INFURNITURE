@@ -104,7 +104,13 @@ for(let i = 0; i < card.length; i++) {
 // COMBOBOX
 const partObject = document.getElementsByClassName('particular-object');
 for (let i = 0; i < card.length; i++) {
-    card[i].addEventListener('click', (e) => {
+    if(card[i].childElementCount === 5) {
+        var productImgClick = card[i].children[1]
+    }
+    if(card[i].childElementCount === 4) {
+        var productImgClick = card[i].children[0]
+    }
+    productImgClick.addEventListener('click', (e) => {
         const comboBox = document.getElementById('comboBox-container').style.display = 'unset';
         let productChildren = partObject[i].children;
         if(partObject[i].childElementCount === 5) {
