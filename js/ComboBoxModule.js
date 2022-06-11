@@ -1,3 +1,12 @@
+var xhr= new XMLHttpRequest();
+xhr.open('GET', 'productInfo.html', true);
+xhr.onreadystatechange= function() {
+    if (this.readyState !== 4) return;
+    if (this.status !== 200) return;
+    document.getElementById('hidden-info').innerHTML = this.responseText;
+};
+xhr.send();
+
 class ComboBoxModule {
     createComboBox(productImg, productName, productNewPrice, productOldPrice) {
         const comboBox = document.getElementById('comboBox-container');
@@ -35,8 +44,9 @@ class ComboBoxModule {
                 </div>
             </div>
         </div`;
-        document.getElementById('box-exit').addEventListener('click', (e) => {
-            e.preventDefault();
+
+        // FUNCTION TO HIDE THE COMBOBOX
+        function hideComboBox() {
             comboBox.innerHTML = '';
             comboBox.style.display = 'none';
             document.getElementById('dark-screen').style.opacity = '0';
@@ -44,16 +54,20 @@ class ComboBoxModule {
                 document.getElementById('dark-screen').style.display = 'none';
                 document.getElementById('message').style.display = 'flex';
             }, 200);
+        }
+
+        // LISTENERS TO CLOSE THE COMBOBOX
+        document.getElementById('box-exit').addEventListener('click', (e) => {
+            e.preventDefault();
+            hideComboBox()
         });
         document.getElementById('shpCartBtn').addEventListener('click', (e) => {
             e.preventDefault();
-            comboBox.innerHTML = '';
-            comboBox.style.display = 'none';
-            document.getElementById('dark-screen').style.opacity = '0';
-            setTimeout(() => {
-                document.getElementById('dark-screen').style.display = 'none';
-                document.getElementById('message').style.display = 'flex';
-            }, 200);
+            hideComboBox()
+        });
+        document.getElementById('dark-screen').addEventListener('click', (e) => {
+            e.preventDefault();
+            hideComboBox()
         });
         
         if(productOldPrice !== undefined) {
@@ -63,29 +77,6 @@ class ComboBoxModule {
             document.getElementById('product-name').innerHTML = productName;
             document.getElementById('product-new-price').innerHTML = productNewPrice;
             document.getElementById('product-old-price').innerHTML = productOldPrice;
-            
-            const infoBlock = document.getElementsByClassName('product-info-block');
-            for (let i = 0; i < infoBlock.length; i++) {
-                let blockChildren = infoBlock[i].children;
-                console.log("dsd")
-                if(blockChildren[0].textContent === productName) {
-                    var characteristic1 = blockChildren[1].textContent;
-                    var characteristic2 = blockChildren[2].textContent;
-                    var characteristic3 = blockChildren[3].textContent;
-                    var characteristic4 = blockChildren[4].textContent;
-                    var characteristic5 = blockChildren[5].textContent;
-                    var characteristic6 = blockChildren[6].textContent;
-                    var characteristic7 = blockChildren[7].textContent;
-
-                    document.getElementById('product-1').innerHTML = characteristic1;
-                    document.getElementById('product-2').innerHTML = characteristic2;
-                    document.getElementById('product-3').innerHTML = characteristic3;
-                    document.getElementById('product-4').innerHTML = characteristic4;
-                    document.getElementById('product-5').innerHTML = characteristic5;
-                    document.getElementById('product-6').innerHTML = characteristic6;
-                    document.getElementById('product-7').innerHTML = characteristic7;
-                }
-            }
         }
         if(productOldPrice === undefined) {
             document.getElementById('product-img').setAttribute('src', productImg);
@@ -93,6 +84,27 @@ class ComboBoxModule {
             document.getElementById('product-new-price').innerHTML = productNewPrice;
             document.getElementById('product-old-price').style.display = 'none';
             document.getElementById('product-new-price').style.color = 'black';
+        }
+        const infoBlock = document.getElementsByClassName('product-info-block');
+        for (let i = 0; i < infoBlock.length; i++) {
+            let blockChildren = infoBlock[i].children;
+            if(blockChildren[0].textContent === productName) {
+                var characteristic1 = blockChildren[1].textContent;
+                var characteristic2 = blockChildren[2].textContent;
+                var characteristic3 = blockChildren[3].textContent;
+                var characteristic4 = blockChildren[4].textContent;
+                var characteristic5 = blockChildren[5].textContent;
+                var characteristic6 = blockChildren[6].textContent;
+                var characteristic7 = blockChildren[7].textContent;
+
+                document.getElementById('product-1').innerHTML = characteristic1;
+                document.getElementById('product-2').innerHTML = characteristic2;
+                document.getElementById('product-3').innerHTML = characteristic3;
+                document.getElementById('product-4').innerHTML = characteristic4;
+                document.getElementById('product-5').innerHTML = characteristic5;
+                document.getElementById('product-6').innerHTML = characteristic6;
+                document.getElementById('product-7').innerHTML = characteristic7;
+            }
         }
     }
 }

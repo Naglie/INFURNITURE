@@ -56,6 +56,10 @@ a:hover:not(.img-container a, .logo-container a, .shopping-cart a, .inShoppingCa
 
 /* main */
 
+#hidden-info {
+    display: none;
+}
+
 .wrapper {
     width: 85%;
     margin: 0 auto;
@@ -190,7 +194,6 @@ h2 {
     width: 400px;
     min-width: 400px;
     max-height: 400px;
-    cursor: pointer;
     opacity: 1;
     overflow: hidden;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -257,6 +260,7 @@ h2 {
 .particular-object img {
     width: 400px;
     height: 300px;
+    cursor: pointer;
     transition: ease all 0.5s;
 }
 
