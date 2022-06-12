@@ -37,13 +37,23 @@ a:hover:not(.img-container a, .logo-container a, .shopping-cart a, .inShoppingCa
 
 h1 {
     width: 100%;
-    justify-content: center;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 64px;
     text-align: center;
     letter-spacing: 0.08em;
+}
+
+h2 {
+    margin-top: 90px;
+    width: 100%;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    text-align: center;
+    letter-spacing: 0.08em;  
 }
 
 .about_company{

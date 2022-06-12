@@ -7,6 +7,8 @@ header {
     height: 136px;
     background-color: #FDFCF0;
     display: flex;
+    transition: all 0.4s;
+    transition-timing-function: cubic-bezier(.81,.03,.47,.79);
     /* position: sticky;
     top: 0px; */
 }

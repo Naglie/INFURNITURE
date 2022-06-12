@@ -6,30 +6,7 @@ body {
     margin: 0;
 }
 
-/* header {
-    width: 100%;
-    height: 136px;
-    background-color: #FDFCF0;
-    display: flex;
-}
-
-ul {
-    width: 100%;
-    display: flex;
-    margin: 51px auto;
-    padding: 0;
-}
-
-li {
-    width: 100%;
-    justify-content: space-evenly;
-    font-family: 'Inter';
-    font-size: 28px;
-    list-style: none;
-    text-align: center;
-} */
-
-h2{
+h2 {
     position: sticky;
     width: 394px;
     height: 77px;
@@ -84,11 +61,6 @@ h2{
     font-size: 32px;
 }
 
-.particular-object:hover > img {
+/* .particular-object:hover > img {
     transform: scale(1.05);
-}
-
-/* .shopping-cart-container {
-    height: 0;
-    opacity: 0;
 } */

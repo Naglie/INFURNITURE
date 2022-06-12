@@ -11,12 +11,16 @@ burger.addEventListener('click', (e) => {
         setTimeout(() => {
             burgerNav.style.opacity = '1';
             burgerNav.style.transform = 'translateY(0%)';
+            document.getElementsByTagName('header')[0].style.transition = 'all 0.4s';
+            document.getElementsByTagName('header')[0].style.marginBottom = '250px';
         }, 10);
     }
     else {
         // HIDE BURGER MENU
         burgerNav.style.opacity = '0';
-        burgerNav.style.transform = 'translateY(-70%)';
+        document.getElementsByTagName('header')[0].style.transition = 'all 0.9s';
+        burgerNav.style.transform = 'translateY(-100%)';
+        document.getElementsByTagName('header')[0].style.marginBottom = '0px';
         setTimeout(() => {
             burgerNav.style.display = 'none';
         }, 400);
@@ -28,6 +32,7 @@ window.addEventListener('resize', (e) => {
     // SHOW MOBILE HEADER
     if(widthPixel <= 1250) {
         document.getElementById('burgerContainer').classList.add('activate');
+        document.getElementsByTagName('header')[0].style.marginBottom = '0px';
         let header = document.getElementsByTagName('header')[0];
         let uls = header.getElementsByTagName('ul');
         let shpCart = header.getElementsByClassName('shopping-cart');
@@ -57,6 +62,7 @@ window.addEventListener('resize', (e) => {
             burger.classList.toggle('change');
             burgerNav.classList.toggle('hide');
         }
+        document.getElementsByTagName('header')[0].style.marginBottom = '0px';
         document.getElementById('burgerContainer').classList.remove('activate');
         let header = document.getElementsByTagName('header')[0];
         let uls = header.getElementsByTagName('ul');
