@@ -18,7 +18,7 @@ a {
     cursor: pointer;
 }
 
-a:hover:not(.img-container a, .logo-container a, .shopping-cart a, .inShoppingCart, .myLinks a) {
+a:hover:not() {
     background-size: 100% 2px;
 }
 
@@ -161,33 +161,35 @@ footer {
     color: white;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 .soc-img {
-    width: 310px;
     display: flex;
-    align-items: flex-end;
-    margin-bottom: 24px;
-    margin-left: 24px;
+    justify-content: space-evenly;
+    align-items: flex-start;
 }
-.soc-img img { 
-    width: 50px;
-    height: 50px;
+.soc-img-container {
+    width: 100%;
     margin-right: 33px;
+}
+.soc-img-container img { 
     transition: all .2s;
 }
-.soc-img img:hover { 
+.soc-img-container img:hover { 
     transform: scale(1.05);
 }
 .footer-info {
-    width: 800px;
+    /* width: 800px; */
     display: flex;
     justify-content: space-evenly;
+    align-items: flex-start;
 }
 .footer-header {
     font-size: 18px;
     text-transform: uppercase;
     font-weight: 600;
     margin: 0;
+    margin-bottom: 10px;
 }
 .part {
     width: 238px;
@@ -196,6 +198,7 @@ footer {
     align-items: center;
 }
 .part ul {
+    height: 40px;
     display: flex;
     flex-wrap: wrap;
     margin: 0;
@@ -236,23 +239,17 @@ footer {
     margin-bottom: 40px;
 }
 .form {
-    width: 250px;
-    margin-left: -30px;
-    margin-top: 20px;
-    display: flex;
-    justify-content: flex-start;
-    flex-wrap: wrap;
+    /* display: flex;
+    flex-wrap: wrap; */
+    /* flex-direction: column; */
 }
-.sub-heading {
-    width: 100%;
-}
-.sub-heading p {
-    white-space: nowrap;
-    margin: 0;
-    margin-bottom: -15px;
+.form p {
+    font-size: 22px;
+    /* white-space: nowrap; */
+    margin-bottom: 10px
 }
 input {
-    width: 100%;
+    width: 85%;
     height: 25px;
     border: 1px solid #8a8a8a;
 }
@@ -263,26 +260,21 @@ input::placeholder {
     width: 160px;
     height: 33px;
     margin: 0;
-    margin-top: -25px;
+    margin-top: 5px;
     background: #FFFFFF;
     border-radius: 3px;
+    display: flex;
     justify-content: center;
     align-items: center;
-    display: flex;
 }
 .button a {
     width: 100%;
-    /* height: 100%; */
     letter-spacing: 0;
     text-align: center;
     font-family: 'Roboto';
-    font-style: normal;
     font-weight: 800;
     font-size: 20px;
-    /* line-height: 23px; */
     transition: ease all .3s;
-    color: #000000;
-    justify-content: center;
 }
 .button:hover {
     border: 1px solid white;
@@ -292,10 +284,8 @@ input::placeholder {
     color: white;
 }
 .contacts {
+    display: flex;
     height: 90px;
-    margin-left: 70px;
-    margin-top: 80px;
-
 }
 .contacts p {
     width: 100%;
@@ -318,69 +308,53 @@ input::placeholder {
         justify-content: center;
         align-items: center;
     }
-
     .img-container {
         width: 100%;
         height: 100%;
         margin: 0;
     }
-
     .img-container img {
         width: 100%;
         margin-bottom: 40px;
     }
-
     .person_block {
         width: 500px;
         height: auto;
     }
-
     .team {
         flex-wrap: wrap;
     }
-
     .txt-container {
         width: 100%;
         height: auto;
     }
-
-    .contacts {
-        display: none;
-    }
-
     .form {
         justify-content: flex-end;
     }
-
-    .sales {
-        width: 170px;
-    }
-
-    .offers {
-        width: 170px;
-    }
-
-    .sub-heading {
-        width: 600px;
-
-    }
-
     .sub-heading p {
         font-size: 20px;
     }
-
-    .soc-img {
-        width: 120px;
+}
+@media(max-width: 1550px) {
+    .contacts {
+        display: none;
     }
-}
-
-
-@media(max-width: 1541px) {
-
-}
-
-@media(max-width: 1400px) {
-
+    .form {
+        width: 300px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .form p {
+        text-align: right;
+    }
+    .input-container {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+    input {
+        width: 100%;
+    }
 }
 @media(max-width: 1350px) {
     .partner-container {
@@ -391,15 +365,32 @@ input::placeholder {
     .advantages{
         display: none;
     }
-}
-@media(max-width: 1225px) {
-    .sales{
-        display: none;
+    .offers {
+        width: 20%
     }
 }
 @media(max-width: 1194px) {
     .person_block {
         margin-bottom: 40px;
+    }
+}
+@media(max-width: 1050px) {
+    .offers {
+        width: 50%;
+    }
+    .soc-img {
+        margin-left: 40px;
+    }
+    .footer-info {
+        width: 40%;
+    }
+}
+@media(max-width: 880px) {
+    .offers {
+        display: none;
+    }
+    .footer-info {
+        width: 20%;
     }
 }
 @media(max-width: 850px) {
@@ -420,11 +411,43 @@ input::placeholder {
         margin-top: 60px;
     }
 }
-@media(max-width: 756px) {
-    .offers{
+@media(max-width: 780px) {
+    .footer-info {
         display: none;
     }
-
+}
+@media(max-width: 600px) {
+    .soc-img {
+        /* width: 30%; */
+        margin-left: 0;
+    }
+    .soc-img-container {
+        margin-right: 15px;
+    }
+    .soc-img-container img {
+        width: 30px;
+    }
+    input {
+        width: 90%;
+    }
+}
+@media(max-width: 490px) {
+    .form p {
+        font-size: 18px;
+    }
+    .button {
+        width: 125px;
+        height: 25px;
+    }
+    .button a {
+        font-size: 16px;
+    }
+    input {
+        width: 200px;
+    }
+    .soc-img {
+        margin-left: 10px;
+    }
 }
 @media(max-width: 455px) {
     h1 {
@@ -451,8 +474,11 @@ input::placeholder {
         margin: 0 10px;
     }
     .partners {
-        margin: 0 10px;
         margin-bottom: 85px;
+    }
+    .partner-container {
+        width: 80%;
+        margin: 0 auto;
     }
     .team {
         width: 90%;
@@ -465,14 +491,10 @@ input::placeholder {
         width: 350px;
         height: 350px;
     }
-    .soc-img {
-        width: 50%;
-        height: 40%;
+    .form p {
+        font-size: 14px;
     }
-    .soc-img img {   
-        height: 40px; 
-    }
-    .footer-info {
-        height: 85%;
+    input {
+        width: 150px;
     }
 }
