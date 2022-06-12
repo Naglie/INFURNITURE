@@ -1,14 +1,25 @@
 // import {comboBoxModule} from './ComboBoxModule.js';
 
-var xhr= new XMLHttpRequest();
-xhr.open('GET', 'productInfo.html', true);
-xhr.onreadystatechange= function() {
-    if (this.readyState !== 4) return;
-    if (this.status !== 200) return;
-    document.getElementById('hidden-info').innerHTML = this.responseText;
-};
-xhr.send();
+// var xhr= new XMLHttpRequest();
+// xhr.open('GET', 'productInfo.html', true);
+// xhr.onreadystatechange= function() {
+//     if (this.readyState !== 4) return;
+//     if (this.status !== 200) return;
+//     document.getElementById('hidden-info').innerHTML = this.responseText;
+// };
+// xhr.send();
 
+
+// async function getContentFromHTML(html, id) {
+//     let frame = document.createElement('iframe');
+//     document.body.appendChild(frame);
+//     frame.style.display = 'none';
+//     frame.src = html;
+//     let content = await new Promise(function(resolve, _reject) {
+//       frame.contentWindow.onload = () => resolve(frame.contentDocument.getElementById(id).innerHTML);
+//     });
+//     return content;
+// }
 
 // BURGER MENU
 const burger = document.getElementById('burgerContainer');
