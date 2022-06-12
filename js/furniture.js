@@ -1,4 +1,5 @@
 // import {comboBoxModule} from './ComboBoxModule.js';
+
 var xhr= new XMLHttpRequest();
 xhr.open('GET', 'productInfo.html', true);
 xhr.onreadystatechange= function() {
@@ -156,7 +157,7 @@ for (let i = 0; i < card.length; i++) {
         var productImgClick = card[i].children[0]
     }
     productImgClick.addEventListener('click', (e) => {
-        const comboBox = document.getElementById('comboBox-container').style.display = 'unset';
+        document.getElementById('comboBox-container').style.display = 'unset';
         let productChildren = partObject[i].children;
         if(partObject[i].childElementCount === 5) {
             var productImg = productChildren[1].getAttribute('src');
