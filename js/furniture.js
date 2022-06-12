@@ -133,7 +133,7 @@ for (let i = 0; i < card.length; i++) {
 }
 
 // SHOPPING CART ALERT
-const btnToCart = document.getElementsByClassName("inShoppingCart");
+const btnToCart = document.getElementsByClassName('inShoppingCart');
 for(let i = 0; i < card.length; i++) {
     btnToCart[i].addEventListener('click', addToCart);
     function addToCart() {
@@ -147,16 +147,22 @@ for(let i = 0; i < card.length; i++) {
 const furnitureType = document.getElementsByTagName('h2');
 window.addEventListener('scroll', function () {
     var pixelCount = window.pageYOffset;
-    if (pixelCount < 540) {
-        message.style.top = "20px";
-        for(let i = 0; i < card.length; i++) {
-            furnitureType[i].style.boxShadow = "0 0px 0px 0 rgba(0,0,0,0.2)";
-        }
+    if (pixelCount < 640) {
+        removeShadow();
     }
-    if (pixelCount > 540) {
-        message.style.top = "80px";
-        for(let i = 0; i < card.length; i++) {
-            furnitureType[i].style.boxShadow = "0 8px 8px 0 rgba(0,0,0,0.2)";
-        }
+    if (pixelCount > 640) {
+        setShadow();
     }
-})
+});
+function removeShadow() {
+    document.getElementById('message').style.top = "20px";
+    for(let i = 0; i < furnitureType.length; i++) {
+        furnitureType[i].style.boxShadow = 'none';
+    }
+}
+function setShadow() {
+    document.getElementById('message').style.top = "80px";
+    for(let i = 0; i < furnitureType.length; i++) {
+        furnitureType[i].style.boxShadow = '0 8px 8px 0 rgba(0,0,0,0.2)';
+    }
+}
