@@ -290,7 +290,7 @@ input::placeholder {
 .contacts {
     height: 90px;
     margin-left: 70px;
-    margin-top: 50px;
+    margin-top: 80px;
 
 }
 .contacts p {
@@ -361,6 +361,11 @@ input::placeholder {
 
         width: 120px;
     }
+}
+
+
+@media(max-width: 1400px){
+
 }
 
 
