@@ -3,12 +3,16 @@ html {
 }
 body {
     margin: 0;
-    background-color: #FDFCF0;
-    overflow: hidden;
 }
 main {
-    width: 100%;
-    background-color: #000000;
+    max-height: 647px;
+    overflow: hidden;
+}
+.sale-img-container {
+    overflow: hidden;
+}
+.sale-img {
+    height: auto;
 }
 .sales-container {
     width: 50%;
@@ -62,9 +66,14 @@ main {
     margin-top: 30px;
     display: flex;
     align-items: center;
+    cursor: pointer;
     justify-content: center;
     background: #F4D4AA;
     border-radius: 25px;
+    transition: all .3s;
+}
+.sale-btn-container:hover {
+    transform: scale(1.02) translateY(-10%);
 }
 .sale-btn-container a {
     font-family: 'Roboto', sans-serif;
