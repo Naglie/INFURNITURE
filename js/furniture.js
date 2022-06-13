@@ -289,3 +289,63 @@ function createComboBox(productImg, productName, productNewPrice, productOldPric
         }
     }
 }
+
+
+// ARROW APPEARANCE
+window.addEventListener('scroll', (e) => {
+    let pixelCount = window.pageYOffset;
+    if(pixelCount <= 136) {
+        document.getElementById('arrowContainer').style.opacity = '0';
+        document.getElementById('arrowContainer').style.cursor = 'none';
+    }
+    if(pixelCount >= 136) {
+        document.getElementById('arrowContainer').style.opacity = '1';
+        document.getElementById('arrowContainer').style.cursor = 'pointer';
+
+        if(window.innerWidth < 1625) {
+            document.getElementById('arrowContainer').style.opacity = '0';
+            document.getElementById('arrowContainer').style.cursor = 'none';
+            document.getElementById('arrowContainer').style.transform = 'translateX(-100%)';
+            
+            if(window.innerWidth < 1407) {
+                document.getElementById('arrowContainer').style.opacity = '1';
+                document.getElementById('arrowContainer').style.cursor = 'pointer';
+                document.getElementById('arrowContainer').style.transform = 'translateX(0)';
+            }
+        }
+        if(window.innerWidth > 1625) {
+            document.getElementById('arrowContainer').style.opacity = '1';
+            document.getElementById('arrowContainer').style.cursor = 'pointer';
+            document.getElementById('arrowContainer').style.transform = 'translateX(0)';
+        }
+        if(window.innerWidth < 548) {
+            document.getElementById('arrowContainer').style.opacity = '0';
+            document.getElementById('arrowContainer').style.cursor = 'auto';
+            document.getElementById('arrowContainer').style.transform = 'translateX(-100%)';
+        }
+
+        window.addEventListener('resize', (e) => {
+            if(window.innerWidth < 1625) {
+                document.getElementById('arrowContainer').style.opacity = '0';
+                document.getElementById('arrowContainer').style.cursor = 'none';
+                document.getElementById('arrowContainer').style.transform = 'translateX(-100%)';
+                
+                if(window.innerWidth < 1407) {
+                    document.getElementById('arrowContainer').style.opacity = '1';
+                    document.getElementById('arrowContainer').style.cursor = 'pointer';
+                    document.getElementById('arrowContainer').style.transform = 'translateX(0)';
+                }
+            }
+            if(window.innerWidth > 1625) {
+                document.getElementById('arrowContainer').style.opacity = '1';
+                document.getElementById('arrowContainer').style.cursor = 'pointer';
+                document.getElementById('arrowContainer').style.transform = 'translateX(0)';
+            }
+            if(window.innerWidth < 548) {
+                document.getElementById('arrowContainer').style.opacity = '0';
+                document.getElementById('arrowContainer').style.cursor = 'auto';
+                document.getElementById('arrowContainer').style.transform = 'translateX(-100%)';
+            }
+        });
+    }
+});
