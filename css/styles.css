@@ -28,9 +28,9 @@ main {
 
 .advatages {
     height: 205px;
-
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .advantage {
@@ -101,7 +101,7 @@ h3 {
 .itcss__item {
     background-color: white;
     flex: 0 0 100%;
-    min-width: 100%;
+    max-width: 100%;
     margin: 0;
 }
 
@@ -187,30 +187,35 @@ h3 {
 .itcss__indicator_active {
     background-color: rgb(218, 218, 218);
 }
-
+/* .itcss__item img {
+    width: 100%;
+    height: 500px;
+} */
 .itcss__item_2_img {
     position: absolute;
     width: 100%;
-    height: auto;
+    height: 100%;
     background: url(../Images/Other_images/main2.jpg);
     background-repeat: no-repeat;
-    background-size: 100% 200%;
+    background-size: 100% 606px;
+    /* background-size: 1920px 606px;
+    background-position: 100%; */
 }
 .itcss__item_3_img {
     position: absolute;
     width: 100%;
-    height: auto;
+    height: 100%;
     background: url(../Images/Other_images/main3.jpg);
     background-repeat: no-repeat;
-    background-size: 100% 200%;
+    background-size: 100% 606px;
 }
 .itcss__item_4_img {
     position: absolute;
     width: 100%;
-    height: auto;
+    height: 100%;
     background: url(../Images/Other_images/main4.jpg);
     background-repeat: no-repeat;
-    background-size: 100% 200%;
+    background-size: 100% 606px;
 }
 #btn1 {
     position: absolute;
@@ -263,5 +268,14 @@ h3 {
 
 
 @media (max-width: 1669px) {
-
+    #btn2 {
+        top: 420px;
+        left: 1120px;
+    }
+    #btn3 {
+        left: 950px;
+    }
+    #btn4 {
+        left: 560px;
+    }
 }
