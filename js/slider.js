@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     new ItcSimpleSlider('.itcss', {
       loop: true,
       autoplay: true,
-      interval: 5000,
+      interval: 50000,
       swipe: true,
     });
   });

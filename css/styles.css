@@ -101,7 +101,8 @@ h3 {
 .itcss__item {
     background-color: white;
     flex: 0 0 100%;
-    max-width: 100%;
+    min-width: 100%;
+    margin: 0;
 }
 
   /* кнопки Prev и Next */
@@ -186,38 +187,30 @@ h3 {
 .itcss__indicator_active {
     background-color: rgb(218, 218, 218);
 }
+
 .itcss__item_2_img {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: auto;
     background: url(../Images/Other_images/main2.jpg);
-    /* background-size: 100% 200%; */
     background-repeat: no-repeat;
+    background-size: 100% 200%;
 }
 .itcss__item_3_img {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: auto;
     background: url(../Images/Other_images/main3.jpg);
     background-repeat: no-repeat;
-    /* background-size: 69% 69%; */
+    background-size: 100% 200%;
 }
 .itcss__item_4_img {
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: auto;
     background: url(../Images/Other_images/main4.jpg);
     background-repeat: no-repeat;
-    /* background-size: 69% 69%; */
-}
-@keyframes animate {
-    from {
-        background-position: 0px 0px;
-    }
-    
-    to {
-        background-position: -1073px 0px;
-    }
+    background-size: 100% 200%;
 }
 #btn1 {
     position: absolute;
@@ -266,10 +259,9 @@ h3 {
 }
 
 
-
 /* MEDIA */
 
 
-@media (min-width: 768px) {
-    
+@media (max-width: 1669px) {
+
 }

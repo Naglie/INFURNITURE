@@ -1,3 +1,5 @@
+var burger = document.getElementById('burgerContainer');
+var burgerNav = document.getElementById('topnav');
 // HEADER TYPE (resize page, BUT better to use load)
 window.addEventListener('resize', (e) => {
     var widthPixel = window.innerWidth;

@@ -1,6 +1,6 @@
 // BURGER MENU
-burger = document.getElementById('burgerContainer');
-burgerNav = document.getElementById('topnav');
+var burger = document.getElementById('burgerContainer');
+var burgerNav = document.getElementById('topnav');
 burger.addEventListener('click', (e) => {
     e.preventDefault();
     burger.classList.toggle('change');

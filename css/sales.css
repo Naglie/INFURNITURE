@@ -162,6 +162,9 @@ main {
     }
 }
 @media (max-width: 400px) {
+    .sales-container {
+        top: 310px;
+    }
     .sale-motto {
         top: -150px;
         font-size: 30px;

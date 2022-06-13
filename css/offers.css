@@ -81,3 +81,13 @@ h2 {
         max-height: none;
     }
 }
+@media (max-width: 500px) {
+    h2 {
+        font-size: 50px;
+    }
+}
+@media (max-width: 350px) {
+    h2 {
+        font-size: 36px;
+    }
+}
