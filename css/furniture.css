@@ -28,47 +28,6 @@ a:hover:not(.img-container a, .logo-container a, .shopping-cart a, .inShoppingCa
 
 /* main */
 
-.arrow-container {
-    height: 100%;
-    position: fixed;
-    display: flex;
-    align-items: center;
-    opacity: 0;
-    padding: 0 10px;
-    left: 0;
-    bottom: 0;
-    top: 0;
-    z-index: 99999;
-    transition: all .3s;
-}
-.arrow-circle {
-    width: 45px;
-    height: 45px;
-    margin-bottom: 30px;
-    background-color: rgba(48,59,68,.2);
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: all .3s
-}
-.arrow-circle img {
-    opacity: 0.3;
-    transform: rotate(-90deg);
-    width: 25px;
-    height: 25px;
-    margin-bottom: 3px;
-    transition: all .3s
-}
-.arrow-container:hover {
-    background-color: rgba(128, 128, 128, 0.205);
-}
-.arrow-container:hover > .arrow-circle {
-    background-color: rgba(97, 97, 97, 0.253);
-}
-.arrow-container:hover > .arrow-circle img {
-    opacity: 1;
-}
 
 #hidden-info {
     display: none;

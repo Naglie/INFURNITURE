@@ -5,7 +5,7 @@ html {
 header {
     width: 100%;
     height: 136px;
-    background-color: #FDFCF0;
+    background-color: #F8F7EC;
     z-index: 9999;
     box-shadow: 0 0px 0px 0 rgba(0,0,0,0.2);
     display: flex;
@@ -105,7 +105,8 @@ header ul li a:hover {
     .myLinks a {
         width: 100%;
         height: 50px;
-        background-color: rgb(231, 231, 231);
+        /* background-color: rgb(231, 231, 231); */
+        background-color: #F8F7EC;
         border-bottom: 1px solid;
         display: flex;
         align-items: center;
@@ -119,7 +120,8 @@ header ul li a:hover {
     }
     .myLinks a:hover {
         transition: all .2s;
-        background-color: rgb(216, 216, 216);
+        /* background-color: rgb(216, 216, 216); */
+        background-color: #fffac1;
         font-size: 26px;
     }
 
