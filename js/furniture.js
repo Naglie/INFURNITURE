@@ -351,7 +351,7 @@ window.addEventListener('scroll', (e) => {
     let pixelCount = window.pageYOffset;
     if(pixelCount <= 136) {
         document.getElementById('arrowContainer').style.opacity = '0';
-        document.getElementById('arrowContainer').style.cursor = 'none';
+        document.getElementById('arrowContainer').style.cursor = 'default';
     }
     if(pixelCount >= 136) {
         document.getElementById('arrowContainer').style.opacity = '1';
@@ -359,7 +359,7 @@ window.addEventListener('scroll', (e) => {
 
         if(window.innerWidth < 1625) {
             document.getElementById('arrowContainer').style.opacity = '0';
-            document.getElementById('arrowContainer').style.cursor = 'none';
+            document.getElementById('arrowContainer').style.cursor = 'default';
             document.getElementById('arrowContainer').style.transform = 'translateX(-100%)';
             
             if(window.innerWidth < 1407) {
@@ -375,14 +375,14 @@ window.addEventListener('scroll', (e) => {
         }
         if(window.innerWidth < 548) {
             document.getElementById('arrowContainer').style.opacity = '0';
-            document.getElementById('arrowContainer').style.cursor = 'auto';
+            document.getElementById('arrowContainer').style.cursor = 'default';
             document.getElementById('arrowContainer').style.transform = 'translateX(-100%)';
         }
 
         window.addEventListener('resize', (e) => {
             if(window.innerWidth < 1625) {
                 document.getElementById('arrowContainer').style.opacity = '0';
-                document.getElementById('arrowContainer').style.cursor = 'none';
+                document.getElementById('arrowContainer').style.cursor = 'default';
                 document.getElementById('arrowContainer').style.transform = 'translateX(-100%)';
                 
                 if(window.innerWidth < 1407) {
@@ -398,7 +398,7 @@ window.addEventListener('scroll', (e) => {
             }
             if(window.innerWidth < 548) {
                 document.getElementById('arrowContainer').style.opacity = '0';
-                document.getElementById('arrowContainer').style.cursor = 'auto';
+                document.getElementById('arrowContainer').style.cursor = 'default';
                 document.getElementById('arrowContainer').style.transform = 'translateX(-100%)';
             }
         });

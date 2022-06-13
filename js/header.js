@@ -11,16 +11,14 @@ burger.addEventListener('click', (e) => {
         setTimeout(() => {
             burgerNav.style.opacity = '1';
             burgerNav.style.transform = 'translateY(0%)';
-            document.getElementsByTagName('header')[0].style.transition = 'all 0.4s';
             document.getElementsByTagName('header')[0].style.marginBottom = '250px';
         }, 10);
     }
     else {
         // HIDE BURGER MENU
         burgerNav.style.opacity = '0';
-        document.getElementsByTagName('header')[0].style.transition = 'all 0.9s';
-        burgerNav.style.transform = 'translateY(-100%)';
-        document.getElementsByTagName('header')[0].style.marginBottom = '0px';
+        burgerNav.style.transform = 'translateY(-70%)';
+        document.getElementsByTagName('header')[0].style.marginBottom = '0';
         setTimeout(() => {
             burgerNav.style.display = 'none';
         }, 400);

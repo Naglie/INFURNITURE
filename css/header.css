@@ -15,6 +15,13 @@ header {
     top: 0px; */
 }
 
+.logo-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    transition: all .3s;
+}
+
 .topnav {
     display: none;
 } 
@@ -127,5 +134,15 @@ header ul li a:hover {
 
     .hide {
         display: none;
+    }
+}
+@media(max-width: 650px) {
+    .logo-container a img {
+        width: 270px;
+    }
+}
+@media(max-width: 450px) {
+    .logo-container a img {
+        width: 220px;
     }
 }
