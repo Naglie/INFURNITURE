@@ -189,7 +189,7 @@ h2 {
     font-style: bold;
     color: white;
     font-family: 'Roboto';
-    font-style: normal;
+    font-style: italic;
     font-weight: 700;
     font-size: 28px;
 }
@@ -233,10 +233,11 @@ h2 {
     width: 400px;
     height: 300px;
     cursor: pointer;
+    /* object-fit: cover; */
     transition: ease all 0.5s;
 }
 
-.particular-object p:not(.discount-circle1 p) {
+.particular-object p:not(.discount-circle p) {
     font-family: 'Inter';
     font-style: italic;
     font-size: 20px;
@@ -344,7 +345,7 @@ h2 {
     }
 }
 
-@media (max-width: 1360px) {
+@media (max-width: 1407px) {
     .objects-column {
         margin: 0 24px;
     }
@@ -427,5 +428,44 @@ h2 {
 @media (max-width: 724px) {
     .type {
         width: 100%;
+    }
+}
+
+@media (max-width: 481px) {
+    .objects-column {
+        height: 520px;
+    }
+    .particular-object {
+        width: 350px;
+        min-width: 350px;
+        padding-bottom: 20px ;
+    }
+    .particular-object p b {
+        margin-right: 10px
+    }
+    .particular-object img {
+        /* object-fit: cover; */
+        object-position: 85% 20%;
+    }
+    .discount-circle {
+        width: 60px;
+        height: 60px;
+        margin: -25px 310px;
+    }
+    .discount-circle p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 407px) {
+    .objects-column {
+        height: 520px;
+    }
+    .particular-object {
+        width: 330px;
+        min-width: 330px;
+    }
+    .discount-circle {
+        margin: -25px 285px;
     }
 }
