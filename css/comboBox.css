@@ -3,20 +3,20 @@
     width: calc((1920px / 100) * 55);
     height: 800px;
     position: fixed;
-    top: 50%;
-    left: 50%;
-    margin-top: -100px; /* Negative half of height. */
-    margin-left: -250px; /* Negative half of width. */
+    margin: 5% auto;
+    left: 0;
+    right: 0;
     /* left: calc(45% / 2);
-    right: calc(45% / 2);
-    bottom: 60px; */
-    z-index: 10000;
+    right: calc(45% / 2); */
+    bottom: -1%;
+    z-index: 9999999;
     border: 2px solid gray;
     background-color: white;
 }
 #comboBox {
     width: 95%;
     margin: 0 auto;
+    position: relative;
     margin-top: 5%;
     margin-left: 5%;
 }
@@ -26,8 +26,11 @@
     border-radius: 50%;
     background-color: black;
     position: absolute;
-    margin-top: -80px;
-    margin-left: 965px;
+    top: -12%;
+    right: -2%;
+    z-index: 10;
+    /* margin-top: -80px;
+    margin-left: 965px; */
     cursor: pointer;
     display: flex;
     justify-content: center;
@@ -43,10 +46,10 @@
 }
 .box-img_info-container {
     width: 100%;
-    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
+    /* flex-wrap: wrap; */
 }
 .box-img-container {
     width: 500px;
@@ -126,7 +129,8 @@
 }
 #box-characteristics-name {
     width: 100%;
-    margin-top: 60px;
+    margin: 0;
+    margin-bottom: 25px;
     font-family: 'Roboto';
     font-style: normal;
     text-transform: uppercase;
@@ -137,13 +141,16 @@
 }
 .box-characteristics-container {
     width: 100%;
+    margin-top: 60px;
+    height: auto;
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    flex-wrap: wrap;
 }
 .box-characteristics1, .box-characteristics2 {
-    width: 100%;
-    height: 180px;
+    width: 50%;
+    height: auto;
 }
 .box-characteristics1 p, .box-characteristics2 p {
     margin: 10px 0;
@@ -152,4 +159,113 @@
     font-weight: 400;
     font-size: 26px;
     text-align: left;
+}
+
+
+/* MEDIA */
+
+
+@media (max-width: 1130px) {
+    #comboBox-container {
+        width: 90%;
+        bottom: 2%;
+        max-height: 800px;
+    }
+}
+@media (max-width: 915px) {
+    #comboBox {
+        width: 100%;
+        margin: 2% 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        top: 0%;
+    }
+    .box-img_info-container {
+        flex-wrap: wrap;
+    }
+    .box-img-container {
+        width: 95%;
+        /* overflow: hidden; */
+        position: relative;
+        height: auto;
+        z-index: 1;
+    }
+    .box-img-container img {
+        max-height: 350px;
+        object-fit: cover;
+    }
+    .box-info-container {
+        width: 100%;
+        height: 200px;
+    }
+    .box-button {
+        width: 50%;
+        height: 60px;
+    }
+    #box-characteristics-name {
+        font-size: 26px;
+    }
+    .box-characteristics-container {
+        margin-top: 20px;
+        margin-left: 20px;
+    }
+    .box-characteristics1 p, .box-characteristics2 p {
+        font-size: 18px;
+    }
+    .box-exit-btn {
+        top: -7%;
+        right: -2%;
+    }
+}
+@media (max-width: 915px) {
+    /* .box-characteristics1, .box-characteristics2 {
+        width: 240px;
+    } */
+
+}
+@media (max-width: 770px) {
+    .box-exit-btn {
+        top: -6%;
+        right: -3%;
+    }
+}
+@media (max-width: 570px) {
+    #product-old-price {
+        font-size: 30px;
+    }
+    #product-new-price {
+        font-size: 30px;
+    }
+    .box-info-container {
+        height: 180px;
+    }
+    .box-button {
+        width: 270px;
+        height: 50px;
+    }
+    .box-button a {
+        font-size: 28px;
+    }
+    #comboBox-container {
+        /* max-height: 725px; */
+        height: auto;
+        bottom: 7%;
+    }
+}
+@media (max-width: 500px) {
+    .box-characteristics1, .box-characteristics2 {
+        width: 100%;
+    }
+}
+@media (max-width: 400px) {
+    .box-exit-btn {
+        top: -5%;
+        right: -5%;
+    }
+}
+@media (max-width: 380px) {
+    #box-characteristics-name {
+        font-size: 22px;
+    }
 }

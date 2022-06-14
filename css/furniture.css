@@ -40,7 +40,7 @@ a:hover:not(.img-container a, .logo-container a, .shopping-cart a, .inShoppingCa
 }
 
 #dark-screen {
-    z-index: 9999;
+    z-index: 999999;
     position: fixed;
     display: none; 
     width: 100%; 

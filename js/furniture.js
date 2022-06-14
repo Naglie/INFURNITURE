@@ -266,8 +266,8 @@ function createComboBox(productImg, productName, productNewPrice, productOldPric
                 </div>
             </div>
         </div>
-        <p id="box-characteristics-name">Характеристики</p>
         <div class="box-characteristics-container">
+            <p id="box-characteristics-name">Характеристики</p>
             <div class="box-characteristics1">
                 <p id="product-1"></p>
                 <p id="product-2"></p>
