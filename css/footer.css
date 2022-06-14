@@ -7,7 +7,7 @@ footer {
     background-color: black;
     font-family: 'Open Sans', sans-serif;
     color: white;
-    position: relative;
+    /* position: relative; */
     bottom: 0;
     display: flex;
     justify-content: space-evenly;

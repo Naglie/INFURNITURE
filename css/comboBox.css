@@ -3,9 +3,13 @@
     width: calc((1920px / 100) * 55);
     height: 800px;
     position: fixed;
-    left: calc(45% / 2);
+    top: 50%;
+    left: 50%;
+    margin-top: -100px; /* Negative half of height. */
+    margin-left: -250px; /* Negative half of width. */
+    /* left: calc(45% / 2);
     right: calc(45% / 2);
-    bottom: 60px;
+    bottom: 60px; */
     z-index: 10000;
     border: 2px solid gray;
     background-color: white;

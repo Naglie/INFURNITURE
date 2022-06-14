@@ -23,18 +23,21 @@ a:hover:not(.logo-container a, .button a, .shine-button, .myLinks a) {
 
 main {
     width: 100%;
+    height: auto;
     background-color: #FDFCF0;
 }
 
 .advatages {
-    height: 205px;
+    height: auto;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
 
 .advantage {
+    width: 22%;
     display: flex;
+    justify-content: center;
     align-items: center;
     padding: 20px;
 }
@@ -187,12 +190,11 @@ h3 {
 .itcss__indicator_active {
     background-color: rgb(218, 218, 218);
 }
-/* .itcss__item img {
-    width: 100%;
-    height: 500px;
-} */
 .itcss__item_2_img {
     position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     width: 100%;
     height: 100%;
     background: url(../Images/Other_images/main2.jpg);
@@ -203,6 +205,9 @@ h3 {
 }
 .itcss__item_3_img {
     position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     width: 100%;
     height: 100%;
     background: url(../Images/Other_images/main3.jpg);
@@ -211,6 +216,9 @@ h3 {
 }
 .itcss__item_4_img {
     position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     width: 100%;
     height: 100%;
     background: url(../Images/Other_images/main4.jpg);
@@ -219,26 +227,23 @@ h3 {
 }
 #btn1 {
     position: absolute;
-    left: 398px;
-    top: 445px;
+    right: 970px;
+    top: 435px;
     background: #F4D4AA;
 }
 #btn2 {
-    position: absolute;
-    left: 1368px;
-    top: 388px;
+    margin-top: 15%;
+    margin-right: 2%;
     background: #D2F0F2;
 }
 #btn3 {
-    position: absolute;
-    left: 1141px;
-    top: 360px;
+    margin-top: 15%;
+    margin-right: 13.5%;
     background: #EBC7C7;
 }
 #btn4 {
-    position: absolute;
-    left: 704px;
-    top: 399px;
+    margin-top: 16%;
+    margin-right: 38%;
     background: #D5F7F4;
 }
 .shine-button {
@@ -259,23 +264,218 @@ h3 {
     transform: translateY(-3px) scale(1.02);
 }
 #btn1, #btn2, #btn3, #btn4 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 25px;
     transition: .3s;
 }
-
 
 /* MEDIA */
 
 
 @media (max-width: 1669px) {
+    .shine-button {
+        width: 400px;
+        height: 75px;
+        font-size: 40px;
+    }
+    #btn1 {
+        width: 450px;
+        top: 70%;
+        left: 20%;
+    }
+    .itcss__item img {
+        width: 100%;
+        height: 100%;
+    }
+    .itcss__item_2_img {
+        width: 100%;
+        height: 100%;
+        /* background-size: 1920px 606px;
+        background-position: 100% 20%; */
+        background-size: 100% 100%;
+        background-position: auto;
+    }
+    .itcss__item_3_img {
+        width: 100%;
+        height: 100%;
+        /* background-size: 1920px 606px;
+        background-position: 100% 20%; */
+        background-size: 100% 100%;
+        background-position: auto;
+    }
+    .itcss__item_4_img {
+        width: 100%;
+        /* background-size: 1920px 606px;
+        background-position: 10% 20%; */
+        background-size: 100% 100%;
+        background-position: auto;
+    }
+}
+@media (max-width: 1655px) {
+    .advantage {
+        width: 47%;
+    }
+}
+@media (max-width: 1520px) {
+    #btn1 {
+        top: 65%;
+        left: 17%;
+    }
+}
+@media (max-width: 1520px) {
+    #btn1, #btn2, #btn3, #btn4 {
+        width: 350px;
+        height: 60px;
+        font-size: 34px;
+    }
+    .shine-button {
+        font-size: 30px;
+    }
+}
+@media (max-width: 1230px) {
+    #btn3 {
+        width: 310px;
+        margin-right: 12%;
+    }
+}
+@media (max-width: 1200px) {
+    #btn1 {
+        height: 50px;
+        left: 15%;
+        top: 62%;
+    }
+    .shine-button {
+        font-size: 26px;
+    }
+}
+@media (max-width: 1000px) {
+    .shine-button {
+        font-size: 22px;
+    }
+    #btn1 {
+        width: 250px;
+        height: 45px;
+        top: 61%;
+    }
     #btn2 {
-        top: 420px;
-        left: 1120px;
+        width: 250px;
+        margin-top: 21%;
+        margin-right: 2%;
     }
     #btn3 {
-        left: 950px;
+        width: 250px;
+        margin-top: 21%;
+        margin-right: 12%;
     }
     #btn4 {
-        left: 560px;
+        width: 250px;
+        margin-top: 21%;
+        margin-right: 35%;
+    }
+}
+@media (max-width: 865px) {
+    .shine-button {
+        font-size: 18px;
+    }
+    #btn1 {
+        width: 220px;
+        height: 35px;
+        top: 58%;
+    }
+}
+@media (max-width: 768px) {
+    .itcss__item {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    .itcss__item img {
+        width: auto;
+        height: 300px;
+    }
+    .shine-button {
+        font-size: 34px;
+    }
+    #btn1 {
+        width: 350px;
+        height: 60px;
+        top: 58%;
+        left: 5%;
+    }
+    #btn2 {
+        width: 330px;
+        margin-top: 35%;
+    }
+    #btn3 {
+        width: 330px;
+        margin-top: 30%;
+        margin-right: 11%;
+    }
+    #btn4 {
+        width: 330px;
+        margin-right: 22%;
+        margin-top: 32%;
+    }
+    .itcss__item_2_img {
+        width: 100%;
+        height: 100%;
+        background-size: 1000px 300px;
+        background-position: 100% 100%;
+    }
+    .itcss__item_3_img {
+        width: 100%;
+        height: 100%;
+        background-size: 1000px 300px;
+        background-position: 100% 20%;
+
+    }
+    .itcss__item_4_img {
+        width: 100%;
+        background-size: 1000px 300px;
+        background-position: 40% 20%;
+    }
+}
+@media (max-width: 560px) {
+    #btn4 {
+        width: 330px;
+        margin-right: 12%;
+        margin-top: 42%;
+    }
+}
+@media (max-width: 440px) {
+    #btn2 {
+        margin-right: 10%;
+        margin-top: 40%;
+    }
+}
+@media (max-width: 418px) {
+    .advantage h3 {
+        font-size: 30px
+    }
+    #btn4 {
+        width: 330px;
+        margin-right: 5%;
+        margin-top: 50%;
+    }
+    #btn3 {
+        width: 330px;
+        margin-right: 9%;
+        margin-top: 50%;
+    }
+}
+@media (max-width: 398px) {
+    .shine-button {
+        font-size: 28px;
+    }
+    #btn1 {
+        width: 290px;
+        height: 60px;
+        top: 48%;
+        left: 12%;
+    }
+    #btn3 {
+        margin-right: 5%;
     }
 }
