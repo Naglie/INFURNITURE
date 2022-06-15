@@ -3,8 +3,10 @@ html {
 }
 body {
     margin: 0;
+    background-color: black;
 }
 main {
+    min-height: 660px;
     max-height: 647px;
     overflow: hidden;
 }

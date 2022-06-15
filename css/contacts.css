@@ -26,6 +26,7 @@ a:hover:not(.logo-container a, .shopping-cart a, .button a, .myLinks a) {
 
 
 main {
+    min-height: 615px;
     max-height: 672px;
     transition: all .3s;
 }
