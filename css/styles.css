@@ -16,7 +16,6 @@ a {
     background-size: 0% 2px;
     transition: background-size .3s;
 }
-
 a:hover:not(.logo-container a, .button a, .shine-button, .myLinks a) {
     background-size: 100% 2px;
 }
